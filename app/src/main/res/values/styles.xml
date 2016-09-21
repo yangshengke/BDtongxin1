@@ -1,0 +1,71 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!-- 注意下面的固定的名字，这个就是用来自定义actionbar风格的-->
+        <item name="android:actionBarStyle">@style/actionbar_def_style</item>
+        <!-- 让actionbar悬浮 -->
+        <item name="android:windowActionBarOverlay">true</item>
+        <!-- 左上角的返回箭头替换 -->
+        <!--<item name="android:homeAsUpIndicator">@drawable/ic_home_back</item>-->
+    </style>
+
+    <!-- 自定义ActionBar样式，重设ActionBar背景，隐藏actionbar左侧的应用图标和标题 -->
+    <style name="actionbar_def_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <!-- 在样式里面直接替换掉actionbar的背景，避免在有的窗口进入慢时导致进入时显示系统默认的actionbar -->
+        <!--ActionBar本身的背景颜色-->
+        <item name="android:background">#33000000</item>
+        <!--ActionBar被分离时Tab 的背景颜色-->
+        <!--<item name="android:backgroundStacked">#346c36</item>-->
+        <!--ActionBar Item 在分割到底部时的背景颜色-->
+        <!--<item name="android:backgroundSplit">#33000000</item>-->
+        <!-- 在样式里面去掉acionbar的应用图标和标题 -->
+        <item name="android:displayOptions">useLogo</item>
+        <!-- 可以自定义actionbar高度 -->
+        <item name="android:height">35dp</item>
+        <!-- 可以添加背景图片 -->
+        <!--<item name="android:background">@drawable/titlebar_bg</item>-->
+    </style>
+
+    <!--状态标题栏样式-->
+    <style name="topbar_bg">
+        <item name="android:gravity">center_vertical</item>
+        <!--<item name="android:background">@drawable/top_bar_bg</item>-->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">46.0dip</item>
+        <item name="android:background">#33000000</item>
+    </style>
+
+    <style name="topbar_text">
+        <item name="android:textSize">23sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowColor">#40000000</item>
+        <item name="android:shadowDy">-2.0</item>
+        <item name="android:shadowRadius">4.0</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="topbar_btn">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="topbar_left_btn" parent="@style/topbar_btn">
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="topbar_right_btn" parent="@style/topbar_btn">
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+</resources>

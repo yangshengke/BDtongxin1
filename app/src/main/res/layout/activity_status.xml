@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/black_dot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.BDcommunication.Status.StatusActivity">
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="120dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="false"
+        android:id="@+id/Llayout1"
+        android:layout_marginTop="35dp">
+
+        <TableLayout
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="15dp">
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/telephone" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="本机号码"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="无北斗卡或未开启GPS"
+                    android:id="@+id/CardNumber"
+                    android:textAlignment="center"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="50dp">
+
+            <TableRow>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/alarm_clock" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_gravity="center"
+                    android:text="北斗时间"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:layout_gravity="center"
+                    android:id="@+id/TvTime"
+                    android:layout_width="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/BDLinearLayout"
+        android:weightSum="1"
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="170dp">
+
+        <com.example.lenovo.BDcommunication.Status.HistogramView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/HistogramViewForBD1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
