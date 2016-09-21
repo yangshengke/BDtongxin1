@@ -346,7 +346,6 @@ public class NewSMSActivity extends Activity {
 
         protected void onQueryComplete(int token, Object cookie, Cursor cursor) {
             if (cursor != null && cursor.getCount() > 0) {
-
                 list = new ArrayList<ContactBean>();
                 cursor.moveToFirst();
                 for (int i = 0; i < cursor.getCount(); i++) {
