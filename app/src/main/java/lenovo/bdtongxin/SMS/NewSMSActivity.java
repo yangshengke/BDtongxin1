@@ -42,7 +42,7 @@ import java.util.Map;
 import lenovo.bdtongxin.R;
 
 /**
- *     新建短信，由HomeSMSActivity跳转而来
+ *   用于新建短信，由HomeSMSActivity跳转而来
  */
 public class NewSMSActivity extends Activity {
     private Button btn_return;
